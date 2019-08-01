@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>Exercício 30 (Do...While)</title>
+</head>
+<body>
+<script type="text/javascript">
+	var n1, n2;
+
+	n1= parseInt(prompt("Digite o primeiro número")); 
+	n2= parseInt(prompt("Digite o segundo número"));
+
+	if (n2>n1){
+	 	do{
+	 		if (n1%2!=0) {
+    			document.write(n1+'<br>');
+    		}
+    		n1++;
+	 	}
+	 	while(n1<n2);
+	}
+    else if (n1>n2) {
+    	do{
+    		if (n2%2!=0) {
+    			document.write(n2+'<br>');
+    		}
+    		n2--;
+    	}
+    	while(n2>n1);
+    }
+    else{
+    	document.write("Números iguais");
+    }	
+
+</script>
+</body>
+</html>
